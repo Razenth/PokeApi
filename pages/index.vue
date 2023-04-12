@@ -29,7 +29,7 @@ export default {
           const {data} = await this.$axios.get(`pokemon/${i}`)    
           this.response.push(data)
         }
-      }
+      },
   },
 }
 </script>
@@ -39,15 +39,15 @@ export default {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: rgb(169, 229, 240);
+        background-color: rgb(34, 34, 34);
         height: 100%;
         padding: 15px;
     }
 
     h1{
         background-color: white;
-        color: black;
-        width: 100%;
+        color: rgb(130, 74, 175);
+        width: 50%;
         height: 100px;
         text-align: center;
         font-size: 75px;
@@ -65,5 +65,7 @@ export default {
     .cartas{
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
     }
 </style>
